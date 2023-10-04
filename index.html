@@ -1,0 +1,27 @@
+  <h1>URL Shortener JS</h1>
+  <main class="url-shortener">
+    <div class="container">
+      <h2>Enter a URL</h2>
+
+      <form id="form">
+        <input type="text" id="input" value="">
+        <button id="shorten">Shorten</button>
+      </form>
+
+      <div id="result">
+        <div id="link"></div>
+        <button id="copy"></button>
+      </div>
+      <div class="recent">
+        <button id="recent" onclick="renderRecentLinks()">Recent Links</button>
+      </div>
+      <div id="recent-url-modal">
+        <div id="recent-url-content">
+          <span id="close-recent">X</span>
+          <h3>Your recent links</h3>
+          <div id="links"></div>
+          <button id="clear">Clear Links</button>
+        </div>
+      </div>
+    </div>
+  </main>
